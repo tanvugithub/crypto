@@ -36,8 +36,35 @@
 # Xem lại log commit
 > git log
 
-# Git push -u origin master | main   -> lần đầu
+# Git push -u origin <master | main>   -> lần đầu
 # lần thứ 2 trở đi chỉ cần: git push
 
-git reset --soft HEAD~1
-git reset --hard HEAD~1
+# Sau khi git add, muốn đưa về lại working directory
+> git reset
+> git restore -S . --> (đưa all file đang staging về working directory)
+> git restore -S <file path> chỉ đưa duy nhất file chỉ định về working directory
+
+# git checkout <file path>
+=> đưa 1 file đang chỉnh sửa về trạng thái trước đó
+
+# git checkout -b <tên nhánh>
+=> tạo nhánh mới và chuyển qua nhánh mới
+
+# git checkout <tên nhánh>
+=> chuyển nhánh (không có -b)
+# branch
+// dev => kiểm thử QA & DEV (dev)
+//staging  => QA kiểm thử 1 lần (staging)
+// production => end user (main / release)
+
+> git branch <tên nhánh>    
+=> tạo ra nhánh mới
+=> nhánh mới chứa toàn bộ code của nhánh đang đứng
+ví dụ:
+> git branch feature/login
+
+> git branch -a or git branch
+=> liệt kê tất cả các branch đang có trong repository
+
+> git switch <tên nhánh> 
+=> chuyển nhánh
