@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crypto</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <!-- Slick CSS -->
+        <link rel="stylesheet" href="./assets/lib/slick/slick.css" />
+
+        <!-- Slick CSS Theme -->
+        <!-- Ko bắt buộc -->
+        <link rel="stylesheet" href="./assets/lib/slick/slick-theme.css" />
+
+        <link rel="stylesheet" href="output.css" type="text/css" />
+        <style>
+            /* ghi đè CSS thư viện slick */
+            .carousel-slider .slick-dots li button {
+                background: #888;
+                border-radius: 50%;
+                font-size: 0;
+                transition: all 0.3s linear;
+            }
+
+            .carousel-slider .slick-dots li button::before {
+                content: "";
+            }
+
+            .carousel-slider .slick-dots li button:hover {
+                background: #fff;
+            }
+
+            /* selector tới thẻ li phải có class slick-active */
+            .carousel-slider .slick-dots li.slick-active button {
+                background: #e62b4a;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="font-bold underline text-red-500 bg-[#000] text-80">
+            Hello, world!
+        </div> -->
+        <main class="bg-[#151937]">
+            <section id="header">
+                <header class="py-8">
+                    <div class="container flex justify-between items-center">
+                        <div class="text-3xl font-semibold text-white">
+                            Cyber crypto
+                        </div>
+                        <div
+                            class="hidden md:flex justify-center justify-items-center gap-5"
+                        >
+                            <nav>
+                                <a
+                                    href="#"
+                                    class="text-white font-normal hover:text-blue-500 transition-all duration-300 ease-linear"
+                                    >Home</a
+                                >
+                            </nav>
+                            <nav>
+                                <a
+                                    href="#"
+                                    class="text-white font-normal hover:text-blue-500 transition-all duration-300 ease-linear"
+                                    >Pages</a
+                                >
+                            </nav>
+                            <nav>
+                                <a
+                                    href="#"
+                                    class="text-white font-normal hover:text-blue-500 transition-all duration-300 ease-linear"
+                                    >Portfolio</a
+                                >
+                            </nav>
+                        </div>
+                        <div class="flex justify-between items-center gap-4">
+                            <button
+                                class="bg-[#1e40af] hover:bg-blue-900 text-white font-semibold py-2 px-5 rounded-md transition-all"
+                            >
+                                Get started
+                            </button>
+                            <div class="text-white md:hidden">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <section id="about" class="py-20">
+                <div class="container flex flex-col lg:flex-row items-center gap-8">
+                    <div class="w-full lg:w-1/2 text-white space-y-10 order-2 lg:order-1">
+                        <h2 class="text-8xl font-semibold">
+                            Trusted & Secure
+                            <span
+                                class="bg-gradient-to-r from-[#ff2a60] to-[#ff7bee] bg-clip-text text-transparent"
+                                >Crypto</span
+                            >
+                            Market Exchange.
+                        </h2>
+                        <p class="text-[#d0d0d0] text-2xl font-normal">
+                            Already have a website? Try our hosting to alive it
+                            with industry-leading load times.
+                        </p>
+                        <button
+                            class="py-3 px-8 text-[1.1rem] font-medium rounded-full bg-gradient-to-r from-[#ff2a60] to-[#ff7bee]"
+                        >
+                            Start Trading
+                        </button>
+                        <p class="text-7xl a-rating">A+ Rating</p>
+                        <p class="text-[#999] text-2xl font-normal">
+                            Avg rating 4.8 makes us world most best apps.
+                        </p>
+                    </div>
+                    <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                        <img
+                            class="w-full"
+                            src="./assets/images/bank.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="platform" class="py-10">
+                <div class="container text-white space-y-5">
+                    <div class="text-center">
+                        <h2 class="text-6xl">
+                            Trusted
+                            <span
+                                class="bg-gradient-to-r from-[#ff2a60] to-[#ff7bee] bg-clip-text text-transparent"
+                                >Cryptocurrency</span
+                            >
+                            Platform
+                        </h2>
+                        <p class="text-xl text-[#888] mt-4">
+                            jano has a variety of features that make it the best
+                            place to start trading
+                        </p>
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <p
+                            class="text-violet-600 py-4 px-5 border-b-[3px] border-violet-600 cursor-pointer font-medium"
+                        >
+                            Profile
+                        </p>
+                        <p
+                            class="text-gray-500 hover:text-white border-b-[3px] border-transparent hover:border-white py-4 px-4 cursor-pointer font-medium"
+                        >
+                            Contact
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+                        <div
+                            class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.2)] p-7 rounded-xl"
+                        >
+                            <img src="./assets/images/trusted_1.png" alt="" />
+                            <p class="text-2xl font-bold">Best Exchange Rate</p>
+                            <p class="text-lg text-[#888] mt-3">
+                                Convert data noise intelligent for quis lorem.
+                            </p>
+                            <i
+                                class="fa-solid fa-arrow-right font-semibold text-3xl text-[#888] mt-3"
+                            ></i>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.1)] p-7 rounded-xl"
+                        >
+                            <img src="./assets/images/trusted_1.png" alt="" />
+                            <p class="text-2xl font-bold">Best Exchange Rate</p>
+                            <p class="text-lg text-[#888] mt-3">
+                                Convert data noise intelligent for quis lorem.
+                            </p>
+                            <i
+                                class="fa-solid fa-arrow-right font-semibold text-3xl text-[#888] mt-3"
+                            ></i>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.1)] p-7 rounded-xl"
+                        >
+                            <img src="./assets/images/trusted_1.png" alt="" />
+                            <p class="text-2xl font-bold">Best Exchange Rate</p>
+                            <p class="text-lg text-[#888] mt-3">
+                                Convert data noise intelligent for quis lorem.
+                            </p>
+                            <i
+                                class="fa-solid fa-arrow-right font-semibold text-3xl text-[#888] mt-3"
+                            ></i>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.1)] p-7 rounded-xl"
+                        >
+                            <img src="./assets/images/trusted_1.png" alt="" />
+                            <p class="text-2xl font-bold">Best Exchange Rate</p>
+                            <p class="text-lg text-[#888] mt-3">
+                                Convert data noise intelligent for quis lorem.
+                            </p>
+                            <i
+                                class="fa-solid fa-arrow-right font-semibold text-3xl text-[#888] mt-3"
+                            ></i>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.1)] p-7 rounded-xl"
+                        >
+                            <img src="./assets/images/trusted_1.png" alt="" />
+                            <p class="text-2xl font-bold">Best Exchange Rate</p>
+                            <p class="text-lg text-[#888] mt-3">
+                                Convert data noise intelligent for quis lorem.
+                            </p>
+                            <i
+                                class="fa-solid fa-arrow-right font-semibold text-3xl text-[#888] mt-3"
+                            ></i>
+                        </div>
+                        <div
+                            class="flex flex-col justify-center items-center bg-[rgba(255,255,255,0.1)] p-7 rounded-xl"
+                        >
+                            <img src="./assets/images/trusted_1.png" alt="" />
+                            <p class="text-2xl font-bold">Best Exchange Rate</p>
+                            <p class="text-lg text-[#888] mt-3">
+                                Convert data noise intelligent for quis lorem.
+                            </p>
+                            <i
+                                class="fa-solid fa-arrow-right font-semibold text-3xl text-[#888] mt-3"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEEDBACK -->
+            <section id="feedback" class="py-20">
+                <div class="text-center">
+                    <p class="text-xl text-[#999]">Feedback</p>
+                    <p class="text-6xl text-white">
+                        Trusted by
+                        <span
+                            class="bg-gradient-to-r from-[#ff2a60] to-[#ff7bee] bg-clip-text text-transparent"
+                            >Clients</span
+                        >
+                    </p>
+                </div>
+                <div class="carousel-slider mt-6">
+                    <div class="carousel-slider-item p-5">
+                        <div
+                            class="slider-content p-7 bg-[rgba(255,255,255,0.2)] rounded-xl"
+                        >
+                            <img src="./assets/images/kanban.png" />
+                            <ul class="flex items-center text-yellow-500 mt-4">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-2xl text-white mt-6">
+                                Certainly from my perspective quis been a great
+                                success with due WP giving us that enterprises
+                                level assured quality.
+                            </p>
+
+                            <p class="text-xl font-semibold mt-6">
+                                <span class="text-white">Quality & Cost:</span>
+                                <span class="text-[#888]">15.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-slider-item p-5">
+                        <div
+                            class="slider-content p-7 bg-[rgba(255,255,255,0.2)] rounded-xl"
+                        >
+                            <img src="./assets/images/fox.png" />
+                            <ul class="flex items-center text-yellow-500 mt-4">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-2xl text-white mt-6">
+                                Certainly from my perspective quis been a great
+                                success with due WP giving us that enterprises
+                                level assured quality.
+                            </p>
+
+                            <p class="text-xl font-semibold mt-6">
+                                <span class="text-white">Quality & Cost:</span>
+                                <span class="text-[#888]">15.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-slider-item p-5">
+                        <div
+                            class="slider-content p-7 bg-[rgba(255,255,255,0.2)] rounded-xl"
+                        >
+                            <img src="./assets/images/goldline.png" />
+                            <ul class="flex items-center text-yellow-500 mt-4">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-2xl text-white mt-6">
+                                Certainly from my perspective quis been a great
+                                success with due WP giving us that enterprises
+                                level assured quality.
+                            </p>
+
+                            <p class="text-xl font-semibold mt-6">
+                                <span class="text-white">Quality & Cost:</span>
+                                <span class="text-[#888]">15.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-slider-item p-5">
+                        <div
+                            class="slider-content p-7 bg-[rgba(255,255,255,0.2)] rounded-xl"
+                        >
+                            <img src="./assets/images/aven.png" />
+                            <ul class="flex items-center text-yellow-500 mt-4">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <p class="text-2xl text-white mt-6">
+                                Certainly from my perspective quis been a great
+                                success with due WP giving us that enterprises
+                                level assured quality.
+                            </p>
+
+                            <p class="text-xl font-semibold mt-6">
+                                <span class="text-white">Quality & Cost:</span>
+                                <span class="text-[#888]">15.00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="md:py-20">
+                <div
+                    class="container bg-[rgba(255,255,255,0.05)] rounded-2xl px-5 lg:px-16 py-7 flex flex-col lg:flex-row flex-wrap justify-between items-baseline"
+                >
+                    <div class="w-full mb-9 lg:w-[100%] xl:w-[40%]">
+                        <p class="text-4xl font-bold text-[#ff60a3]">Jano.</p>
+                        <p class="text-xl font-medium text-white mt-7">
+                            Join our newsletter
+                        </p>
+                        <div
+                            class="mt-4 bg-[rgba(255,255,255,0.09)] max-w-96 flex justify-between items-center my-3 p-2 rounded-md"
+                        >
+                            <input
+                                class="flex-1 bg-transparent outline-none border-none text-white py-2 px-3 placeholder:text-red-500 caret-green-400"
+                                type="text"
+                                placeholder="Enter email"
+                            />
+                            <button
+                                class="bg-gradient-to-r from-[#ff2a60] to-[#ff7bee] py-3 px-8 text-lg text-white font-semibold rounded-md"
+                            >
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full mb-9 md:w-1/2 lg:w-[20%] lg:grow space-y-4">
+                        <p class="text-2xl text-white font-semibold">Links</p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Home</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Pricing</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >About Us</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Careers</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Features</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Demo the product</a
+                            >
+                        </p>
+                    </div>
+                    <div class="w-full mb-9 md:w-1/2 lg:w-[20%] lg:grow space-y-4">
+                        <p class="text-2xl text-white font-semibold">Legal</p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Terms of use</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Terms & conditions</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Privacy policy</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Cookie policy</a
+                            >
+                        </p>
+                    </div>
+                    <div class="w-full mb-9 md:w-1/2 lg:w-[20%] lg:grow space-y-4">
+                        <p class="text-2xl text-white font-semibold">
+                            Products
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Take the tour</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Live chat</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Self-service</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Social</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Collaboration</a
+                            >
+                        </p>
+                        <p>
+                            <a
+                                href="#"
+                                class="footer-link"
+                                >Jano Reviews</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <!-- JQuery -->
+        <script src="./assets/js/jquery-1.11.0.min.js"></script>
+
+        <!-- Slick JS -->
+        <script src="./assets/lib/slick/slick.min.js"></script>
+
+        <script>
+            //Slide
+            $(".carousel-slider").slick({
+                // Chạy vòng tròn
+                infinite: true,
+                // Số lượng item hiển thị
+                slidesToShow: 3,
+
+                // Số lượng item thay đổi khi scroll
+                slidesToScroll: 2,
+
+                // Ẩn hiện mũi tên next or prev item
+                arrows: false,
+
+                // Tự động chuyển slider
+                autoplay: false,
+
+                // Thời gian chuyển slider item (đơn vị ms, 1s = 1000ms)
+                autoplaySpeed: 2000,
+
+                // Hiển thị dot
+                dots: true,
+            });
+        </script>
+    </body>
+</html>
