@@ -68,3 +68,11 @@ ví dụ:
 
 > git switch <tên nhánh> 
 => chuyển nhánh
+
+# git pull
+=> đồng bộ code từ remote về local ứng với nhánh đang đứng
+- trường hợp pull báo lỗi thì gõ:
+> git pull --no-ff
+
+# git clone <repo url>
+=> clone toàn bộ code từ repo về máy
