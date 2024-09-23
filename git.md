@@ -76,11 +76,10 @@ ví dụ:
 
 # git clone <repo url>
 => clone toàn bộ code từ repo về máy
+<<<<<<< HEAD
 
 # git merge <branch>
 - merge branch vào branch hiện tại
 1. TH1: merge thành công nếu không conflict
 2. TH2: bị xung đột => giải quyết conflict => add => commit
 3. nếu merge code mà bị conflict => có thể hủy merge bằng lệnh: git merge --abort
-
-...
