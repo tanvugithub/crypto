@@ -83,3 +83,9 @@ ví dụ:
 1. TH1: merge thành công nếu không conflict
 2. TH2: bị xung đột => giải quyết conflict => add => commit
 3. nếu merge code mà bị conflict => có thể hủy merge bằng lệnh: git merge --abort
+
+# git reset <commit id>
+=> trở về commit chỉ định.
+
+# git push  -f
+=> ghi đè và push đè lên commit trước đó lên repo
